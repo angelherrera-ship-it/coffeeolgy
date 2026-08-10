@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
 :root {
     --cafe-oscuro: #2e1a0f;
     --cafe-medio: #6f4436;
@@ -19,6 +21,11 @@ header{
     color: var(--crema);
     text-align: center;
     padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
 }
 
 nav{
@@ -31,6 +38,12 @@ nav a{
     color: var(--crema);
     text-decoration: none;
     margin:10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+nav a:hover{
+    background-color: rgba(255,255,255,0.15);
 }
 
 main{
@@ -40,6 +53,7 @@ main{
     padding: 20px;
     border: 2px solid var(--acento);
     border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 form{
@@ -79,6 +93,10 @@ input[type="submit"]:hover{
     background-color: var(--cafe-tostado);
 }
 
+body, header, main, nav{
+    transition: background-color 0.3s, color 0.3s;
+}
+
 @media (max-width:768px){
     header{ padding: 15px; }
     nav{ flex-direction:column; align-items:center; gap:10px; }
@@ -111,7 +129,7 @@ body.claro header{
     border-bottom: 2px solid var(--acento);
 }
 body.claro header p{
-    color: var(--cafe-tostado);
+    color: var(--cafe-oscuro);
 }
 body.claro nav{
     background-color: var(--cafe-tostado);
