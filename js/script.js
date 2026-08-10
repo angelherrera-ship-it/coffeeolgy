@@ -50,3 +50,16 @@ formContacto.addEventListener("submit", function (event) {
 document.querySelector("#cerrar-modal").addEventListener("click", function () {
     document.querySelector("#modal-exito").classList.add("oculto");
 });
+
+const inputNombre = document.querySelector("#nombre");
+const inputCorreo = document.querySelector("#correo");
+const btnEnviar = document.querySelector("#btn-enviar");
+
+function revisarCampos() {
+    const nombreOk = inputNombre.value.trim() !== "";
+    const correoOk = inputCorreo.value.includes("@");
+    btnEnviar.disabled = !(nombreOk && correoOk);
+}
+
+inputNombre.addEventListener("input", revisarCampos);
+inputCorreo.addEventListener("input", revisarCampos);

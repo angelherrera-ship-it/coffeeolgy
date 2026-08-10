@@ -240,3 +240,8 @@ body.claro form label{
 .producto p{
     padding-bottom: 15px;
 }
+
+#btn-enviar:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
