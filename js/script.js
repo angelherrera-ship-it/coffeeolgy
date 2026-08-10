@@ -42,6 +42,11 @@ formContacto.addEventListener("submit", function (event) {
     estado.textContent = "¡Gracias! Tu mensaje fue enviado correctamente.";
     estado.classList.remove("oculto", "error");
     estado.classList.add("exito");
+    document.querySelector("#modal-exito").classList.remove("oculto");
 
     formContacto.reset();
+});
+
+document.querySelector("#cerrar-modal").addEventListener("click", function () {
+    document.querySelector("#modal-exito").classList.add("oculto");
 });

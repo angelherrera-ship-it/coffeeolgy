@@ -56,8 +56,21 @@ main{
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+section{
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+section:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
 form{
     margin-top: 20px;
+}
+
+#form-contacto{
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 label{
@@ -169,3 +182,61 @@ body.claro form label{
 .oculto { display: none; }
 .error { display: block; color: #c0392b; font-weight: bold; }
 .exito { display: block; color: #27ae60; font-weight: bold; }
+
+.modal{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal.oculto{ display: none; }
+.modal-contenido{
+    background: var(--crema);
+    color: var(--cafe-oscuro);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+.modal-contenido button{
+    margin-top: 15px;
+    background-color: var(--acento);
+    color: var(--cafe-oscuro);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.producto{
+    background-color: var(--crema);
+    color: var(--cafe-oscuro);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.producto img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.producto h3,
+.producto p{
+    padding: 0 15px;
+}
+.producto p{
+    padding-bottom: 15px;
+}
