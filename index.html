@@ -33,13 +33,13 @@
 </ul>
 <h2>Contáctanos</h2>
 
-<form action="#" method="post">
+<form action="#" method="post" id="form-contacto" novalidate>
 
     <label for="nombre">Nombre:</label><br>
     <input type="text" id="nombre" name="nombre"><br><br>
 
     <label for="correo">Correo electrónico:</label><br>
-    <input type="email" id="correo" name="correo"><br><br>
+    <input type="email" id="correo" name="correo" required><br><br>
 
     <label for="telefono">Teléfono:</label><br>
     <input type="tel" id="telefono" name="telefono"><br><br>
@@ -50,6 +50,7 @@
     <input type="submit" value="Enviar">
 
 </form>
+<p id="form-estado" class="oculto"></p>
 </main>
 <footer>
     <p>&copy; 2026 COFFEEoLOGY. Todos los derechos reservados.</p>

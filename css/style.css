@@ -3,6 +3,7 @@ body{
     color:black;
     font-family: Arial, sans-serif;
     margin: 0;
+    line-height: 1.5;
 }
 
 header{
@@ -117,3 +118,7 @@ body.claro article h2{
 body.claro from label{
     color: black;
 }
+
+.oculto { display: none; }
+.error { display: block; color: #c0392b; }
+.exito { display: block; color: #27ae60; }
