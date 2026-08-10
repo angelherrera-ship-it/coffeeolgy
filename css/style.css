@@ -1,41 +1,54 @@
+:root {
+    --cafe-oscuro: #2e1a0f;
+    --cafe-medio: #6f4436;
+    --cafe-tostado: #a9744f;
+    --crema: #f7ede1;
+    --acento: #d4a24e;
+}
+
 body{
-    background-color: gold;
-    color:black;
+    background-color: var(--cafe-oscuro);
+    color: var(--crema);
     font-family: Arial, sans-serif;
     margin: 0;
     line-height: 1.5;
 }
 
 header{
-    background-color: #e81c1c;
-    color: white;
+    background-color: var(--cafe-medio);
+    color: var(--crema);
     text-align: center;
     padding: 20px;
 }
+
 nav{
-display: flex;
-justify-content:center;
-gap: 20px;
-margin-top: 15px;
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    margin-top: 15px;
 }
 nav a{
-    color: white;
+    color: var(--crema);
     text-decoration: none;
     margin:10px;
 }
-main{width: 80%;
+
+main{
+    width: 80%;
     margin: 20px auto;
-    background-color: #f2f2f2;
+    background-color: var(--cafe-medio);
     padding: 20px;
-    border: 2px solid #e81c1c;
+    border: 2px solid var(--acento);
     border-radius: 10px;
 }
+
 form{
     margin-top: 20px;
 }
 
 label{
     font-weight: bold;
+    color: var(--crema);
 }
 
 input,
@@ -44,81 +57,97 @@ textarea{
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    border: 1px solid #8e1c1c;
+    border: 1px solid var(--acento);
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: var(--crema);
+    color: var(--cafe-oscuro);
 }
 
 input[type="submit"]{
     width: auto;
-    background-color: #8e1c1c;
-    color: white;
+    background-color: var(--acento);
+    color: var(--cafe-oscuro);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 input[type="submit"]:hover{
-    background-color: #6b1414;
+    background-color: var(--cafe-tostado);
 }
-@media (max-width:768px){
-header{
-    padding: 15px;}
 
-nav{
-flex-direction:column;
-align-items:center;
-gap:10px;
+@media (max-width:768px){
+    header{ padding: 15px; }
+    nav{ flex-direction:column; align-items:center; gap:10px; }
+    main{ width: 95%; padding: 15px; }
+    input,
+    textarea{
+        width: 100%;
+    }
 }
-main{
-    width: 95%;
-    padding: 15px;}
-input,
-textarea{
-    width: 100px;    
-}
-}
+
 .boton-modo{
     margin-top: 14px;
-    background-color: orange;
-    color: black;
+    background-color: var(--acento);
+    color: var(--cafe-oscuro);
     border: none;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
+
 body.claro{
-    background-color: white;
-    color: black;
+    background-color: var(--crema);
+    color: var(--cafe-oscuro);
 }
 body.claro header{
-    background-color: white;
-    color: black;
+    background-color: var(--crema);
+    color: var(--cafe-oscuro);
+    border-bottom: 2px solid var(--acento);
 }
-
 body.claro header p{
-    color: #e81c1c;
+    color: var(--cafe-tostado);
 }
-body.claro nav {
-    background-color: #849757;
+body.claro nav{
+    background-color: var(--cafe-tostado);
+}
+body.claro nav a{
+    color: var(--crema);
+}
+body.claro main{
+    background-color: #ffffff;
+    color: var(--cafe-oscuro);
+    border-color: var(--cafe-tostado);
+}
+body.claro label{
+    color: var(--cafe-oscuro);
+}
+body.claro input,
+body.claro textarea{
+    background-color: var(--crema);
+    color: var(--cafe-oscuro);
 }
 body.claro .tarjeta{
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 body.claro .tarjeta h1{
-    color: #e81c1c;
-
+    color: var(--cafe-tostado);
 }
 body.claro article{
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 body.claro article h2{
-    color: #e81c1c;
+    color: var(--cafe-tostado);
 }
-
-body.claro from label{
-    color: black;
+body.claro form label{
+    color: var(--cafe-oscuro);
 }
 
 .oculto { display: none; }
-.error { display: block; color: #c0392b; }
-.exito { display: block; color: #27ae60; }
+.error { display: block; color: #c0392b; font-weight: bold; }
+.exito { display: block; color: #27ae60; font-weight: bold; }
