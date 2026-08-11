@@ -20,12 +20,11 @@ const formContacto = document.querySelector("#form-contacto");
 const estado = document.querySelector("#form-estado");
 
 formContacto.addEventListener("submit", function (event) {
-    event.preventDefault();
-
     const nombre = document.querySelector("#nombre").value;
     const correo = document.querySelector("#correo").value;
 
     if (nombre === "") {
+        event.preventDefault();
         estado.textContent = "Por favor escribe tu nombre.";
         estado.classList.remove("oculto", "exito");
         estado.classList.add("error");
@@ -33,18 +32,12 @@ formContacto.addEventListener("submit", function (event) {
     }
 
     if (!correo.includes("@")) {
+        event.preventDefault();
         estado.textContent = "El correo debe contener una arroba (@).";
         estado.classList.remove("oculto", "exito");
         estado.classList.add("error");
         return;
     }
-
-    estado.textContent = "¡Gracias! Tu mensaje fue enviado correctamente.";
-    estado.classList.remove("oculto", "error");
-    estado.classList.add("exito");
-    document.querySelector("#modal-exito").classList.remove("oculto");
-
-    formContacto.reset();
 });
 
 document.querySelector("#cerrar-modal").addEventListener("click", function () {
