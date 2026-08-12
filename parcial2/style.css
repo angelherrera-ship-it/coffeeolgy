@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.aviso {
+    display: none;
+}
+
+.aviso.error {
+    display: block;
+    color: #b00020;
+}
+
+.aviso.exito {
+    display: block;
+    color: #1b7f3b;
+}
