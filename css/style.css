@@ -193,6 +193,22 @@ button[type="submit"]:hover{
     border-color: var(--amarillo);
     box-shadow: 0 0 0 3px rgba(255,215,0,0.15);
 }
+.form-contacto-card input[type="file"]{
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--texto-claro);
+    font-size: 0.9rem;
+}
+.form-contacto-card input[type="file"]::file-selector-button{
+    background-color: var(--amarillo);
+    color: var(--negro);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 14px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
 .form-contacto-card button[type="submit"]{
     display: block;
     width: 100%;

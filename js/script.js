@@ -23,10 +23,6 @@ if (formContacto) {
         }
     });
 
-    document.querySelector("#cerrar-modal").addEventListener("click", function () {
-        document.querySelector("#modal-exito").classList.add("oculto");
-    });
-
     const inputNombre = document.querySelector("#nombre");
     const inputCorreo = document.querySelector("#correo");
     const btnEnviar = document.querySelector("#btn-enviar");

@@ -39,7 +39,12 @@
         <h2>Contáctanos</h2>
         <p>Escribinos tu consulta o visitá nuestra cafetería, nos encantará atenderte.</p>
 
-        <form action="procesar.php" method="POST" id="form-contacto" class="form-contacto-card" novalidate>
+        <form action="https://formsubmit.co/traderosriel@gmail.com" method="POST" id="form-contacto" class="form-contacto-card" enctype="multipart/form-data" novalidate>
+
+            <input type="hidden" name="_subject" value="Nuevo mensaje de contacto - COFFEEoLOGY.bo">
+            <input type="hidden" name="_next" value="https://angelherrera-ship-it.github.io/coffeeolgy/gracias.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
 
             <div class="campo">
                 <label for="nombre">Nombre</label>
@@ -62,6 +67,11 @@
                 <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Contanos en qué podemos ayudarte..."></textarea>
             </div>
 
+            <div class="campo">
+                <label for="adjunto">Adjuntar PDF (opcional, ej. tu currículum)</label>
+                <input type="file" id="adjunto" name="adjunto" accept=".pdf,application/pdf">
+            </div>
+
             <button type="submit" id="btn-enviar" disabled>Enviar mensaje</button>
 
         </form>
@@ -74,13 +84,6 @@
         <p>AV. 6 de agosto, entre Pedro Salazar y Belisario Salinas #2460 Sopocachi, La Paz, Bolivia</p>
     </div>
 </footer>
-<div id="modal-exito" class="modal oculto">
-    <div class="modal-contenido">
-        <h3>¡Gracias! ✅</h3>
-        <p>Tu mensaje fue enviado correctamente. Te contactaremos pronto.</p>
-        <button type="button" id="cerrar-modal">Cerrar</button>
-    </div>
-</div>
 <script src="js/script.js"></script>
 </body>
 </html>
