@@ -9,50 +9,88 @@
 <body>
 
    <header>
-    <img src="imagenes/empre.png" alt="Logo COFFEEoLOGY" style="height: 60px; vertical-align: middle; margin-right: 10px;">
-    <h1>COFFEEoLOGY</h1>
-    <p>Speciality Coffee Lab</p>
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="menu.html">Menu</a>
-    <a href="nostros.html">Nosotros</a>
-    <a href="contacto.html">Contacto</a>
-</nav>
-<button type="button" id="btn-tema" class="boton-modo">Cambio de modo</button>
+    <div class="header-top">
+        <div class="header-marca">
+            <img src="imagenes/presa.png" alt="Logo COFFEEoLOGY" class="header-logo">
+            <div class="header-titulo">
+                <h1>COFFEEoLOGY.bo</h1>
+                <p>Speciality Coffee Lab</p>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button type="button">Buscar</button>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://wa.me/59177279442" target="_blank" rel="noopener"><img src="imagenes/wapama.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/share/1RcT6Rmk3q/" target="_blank" rel="noopener"><img src="imagenes/book.jfif" alt="Facebook"></a>
+            <a href="https://www.instagram.com/coffeeology.bo?igsh=MWZjbnAxMXBtNzM5Mw==" target="_blank" rel="noopener"><img src="imagenes/gram.jpg" alt="Instagram"></a>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menu</a>
+        <a href="nostros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
 </header>
 <main>
     <section id="menu">
         <h2>Nuestro Menú</h2>
         <div class="menu-grid">
             <div class="producto">
-                <img src="imagenes/cafe.jpg" alt="Espresso COFFEEoLOGY">
-                <h3>Espresso COFFEEoLOGY</h3>
-                <p>Bs 12</p>
+                <img src="imagenes/cafe.jpg" alt="Café Americano">
+                <h2>Café Americano</h2>
+                <h3>Un café suave y delicioso para empezar el día.</h3>
+                <p class="precio">Bs 17.00</p>
             </div>
             <div class="producto">
-                <img src="imagenes/quimica.jpg" alt="Latte de Vainilla">
-                <h3>Latte de Vainilla</h3>
-                <p>Bs 18</p>
+                <img src="imagenes/espresso.jpg" alt="Espresso">
+                <h2>Espresso</h2>
+                <h3>Un espresso fuerte y aromático.</h3>
+                <p class="precio">Bs 20.00</p>
             </div>
             <div class="producto">
-                <img src="imagenes/brownie.jpg" alt="Cold Brew Tostado Oscuro">
-                <h3>Cold Brew Tostado Oscuro</h3>
-                <p>Bs 20</p>
+                <img src="imagenes/te.jpg" alt="Té Verde">
+                <h2>Té Verde</h2>
+                <h3>Refrescante té verde para cualquier momento.</h3>
+                <p class="precio">Bs 15.00</p>
             </div>
             <div class="producto">
-                <img src="imagenes/capuccino.jpg" alt="Frappé de Caramelo">
-                <h3>Frappé de Caramelo</h3>
-                <p>Bs 22</p>
+                <img src="imagenes/latte.jpg" alt="Café Latte">
+                <h2>Café Latte</h2>
+                <h3>Café con leche suave y espumosa.</h3>
+                <p class="precio">Bs 18.00</p>
             </div>
             <div class="producto">
-                <img src="imagenes/tazas.jpg" alt="Cheesecake de Café">
-                <h3>Cheesecake de Café</h3>
-                <p>Bs 15</p>
+                <img src="imagenes/mocha.jpg" alt="Café Mocha">
+                <h2>Café Mocha</h2>
+                <h3>Delicioso café con chocolate y crema.</h3>
+                <p class="precio">Bs 22.00</p>
             </div>
             <div class="producto">
-                <img src="imagenes/pastel.jpg" alt="Brownie Artesanal">
-                <h3>Brownie Artesanal</h3>
-                <p>Bs 14</p>
+                <img src="imagenes/capuccino.jpg" alt="Café Capuchino">
+                <h2>Café Capuchino</h2>
+                <h3>Café expreso con mucha espuma de leche.</h3>
+                <p class="precio">Bs 21.00</p>
+            </div>
+            <div class="producto">
+                <img src="imagenes/brownie.jpg" alt="Brownie de Chocolate">
+                <h2>Brownie de Chocolate</h2>
+                <h3>Delicioso brownie, perfecto para acompañar tu café.</h3>
+                <p class="precio">Bs 10.00</p>
+            </div>
+            <div class="producto">
+                <img src="imagenes/croissant.jpg" alt="Croissant">
+                <h2>Croissant</h2>
+                <h3>Un croissant fresco y mantecoso.</h3>
+                <p class="precio">Bs 12.00</p>
+            </div>
+            <div class="producto">
+                <img src="imagenes/pastel.jpg" alt="Torta de Frutas">
+                <h2>Torta de Frutas</h2>
+                <h3>Deliciosa torta casera con frutas frescas.</h3>
+                <p class="precio">Bs 15.00</p>
             </div>
         </div>
     </section>

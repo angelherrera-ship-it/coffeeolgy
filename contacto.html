@@ -9,44 +9,70 @@
 <body>
 
    <header>
-    <img src="imagenes/empre.png" alt="Logo COFFEEoLOGY" style="height: 60px; vertical-align: middle; margin-right: 10px;">
-    <h1>COFFEEoLOGY</h1>
-    <p>Speciality Coffee Lab</p>
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="menu.html">Menu</a>
-    <a href="nostros.html">Nosotros</a>
-    <a href="contacto.html">Contacto</a>
-</nav>
-<button type="button" id="btn-tema" class="boton-modo">Cambio de modo</button>
+    <div class="header-top">
+        <div class="header-marca">
+            <img src="imagenes/presa.png" alt="Logo COFFEEoLOGY" class="header-logo">
+            <div class="header-titulo">
+                <h1>COFFEEoLOGY.bo</h1>
+                <p>Speciality Coffee Lab</p>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button type="button">Buscar</button>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://wa.me/59177279442" target="_blank" rel="noopener"><img src="imagenes/wapama.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/share/1RcT6Rmk3q/" target="_blank" rel="noopener"><img src="imagenes/book.jfif" alt="Facebook"></a>
+            <a href="https://www.instagram.com/coffeeology.bo?igsh=MWZjbnAxMXBtNzM5Mw==" target="_blank" rel="noopener"><img src="imagenes/gram.jpg" alt="Instagram"></a>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menu</a>
+        <a href="nostros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
 </header>
-<main>
+<main id="main-contacto">
     <section id="contacto">
         <h2>Contáctanos</h2>
         <p>Escribinos tu consulta o visitá nuestra cafetería, nos encantará atenderte.</p>
 
-        <form action="procesar.php" method="POST" id="form-contacto" novalidate>
+        <form action="procesar.php" method="POST" id="form-contacto" class="form-contacto-card" novalidate>
 
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br><br>
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamás?">
+            </div>
 
-            <label for="correo">Correo electrónico:</label><br>
-            <input type="email" id="correo" name="correo" required><br><br>
+            <div class="campo-fila">
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Opcional">
+                </div>
+            </div>
 
-            <label for="telefono">Teléfono:</label><br>
-            <input type="tel" id="telefono" name="telefono"><br><br>
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Contanos en qué podemos ayudarte..."></textarea>
+            </div>
 
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea><br><br>
-
-            <input type="submit" value="Enviar" id="btn-enviar" disabled>
+            <button type="submit" id="btn-enviar" disabled>Enviar mensaje</button>
 
         </form>
         <p id="form-estado" class="oculto"></p>
     </section>
 </main>
-<footer>
-    <p>&copy; 2026 COFFEEoLOGY. Todos los derechos reservados.</p>
+<footer id="pie">
+    <div id="barra_top">
+        <p>¡Somos una cafetería inspirada en la ciencia y amamos el café de especialidad!</p>
+        <p>AV. 6 de agosto, entre Pedro Salazar y Belisario Salinas #2460 Sopocachi, La Paz, Bolivia</p>
+    </div>
 </footer>
 <div id="modal-exito" class="modal oculto">
     <div class="modal-contenido">

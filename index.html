@@ -9,18 +9,67 @@
 <body>
 
    <header>
-    <img src="imagenes/empre.png" alt="Logo COFFEEoLOGY" style="height: 60px; vertical-align: middle; margin-right: 10px;">
-    <h1>☕ COFFEEoLOGY</h1>
-    <p>Speciality Coffee Lab</p>
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="menu.html">Menu</a>
-    <a href="nostros.html">Nosotros</a>
-    <a href="contacto.html">Contacto</a>
-</nav>
-<button type="button" id="btn-tema" class="boton-modo">Cambio de modo</button>
+    <div class="header-top">
+        <div class="header-marca">
+            <img src="imagenes/presa.png" alt="Logo COFFEEoLOGY" class="header-logo">
+            <div class="header-titulo">
+                <h1>COFFEEoLOGY.bo</h1>
+                <p>Speciality Coffee Lab</p>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button type="button">Buscar</button>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://wa.me/59177279442" target="_blank" rel="noopener"><img src="imagenes/wapama.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/share/1RcT6Rmk3q/" target="_blank" rel="noopener"><img src="imagenes/book.jfif" alt="Facebook"></a>
+            <a href="https://www.instagram.com/coffeeology.bo?igsh=MWZjbnAxMXBtNzM5Mw==" target="_blank" rel="noopener"><img src="imagenes/gram.jpg" alt="Instagram"></a>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menu</a>
+        <a href="nostros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
 </header>
 <main>
+    <section id="intro" class="slider-section">
+        <div class="slider">
+            <div class="slide active"><img src="imagenes/hd.png" alt="Slide 1"></div>
+            <div class="slide"><img src="imagenes/porta.png" alt="Slide 2"></div>
+            <div class="slide"><img src="imagenes/porta3.png" alt="Slide 3"></div>
+            <div class="controls">
+                <button class="prev" type="button">❮</button>
+                <button class="next" type="button">❯</button>
+            </div>
+            <button class="pause-button" id="pauseButton" type="button">❚❚</button>
+        </div>
+    </section>
+    <section id="destacados">
+        <h2>Destacados</h2>
+        <div class="destacados-wrapper">
+            <div class="destacado-item">
+                <img src="imagenes/s3.jpg" alt="Café Especial">
+                <h3>Descubre nuestro catálogo de cafés</h3>
+                <p>Descubre nuestras selecciones de cafés especiales con notas únicas y aroma inigualable.</p>
+                <a href="menu.html" class="link">Ver catálogo de cafés</a>
+            </div>
+            <div class="destacado-item">
+                <img src="imagenes/s2.jpg" alt="Variedad de Té">
+                <h3>¿Necesitas trabajo?</h3>
+                <p>Postula para ser parte de nuestro equipo, pronto tendremos mas sucursales y necesitaremos gente como tu!</p>
+                <a href="contacto.html" class="link">Manda tu curriculum</a>
+            </div>
+        </div>
+        <div class="destacado-banner">
+            <img src="imagenes/s1.jpg" alt="Celebración COFFEEoLOGY">
+            <h3>¡Felicitaciones COFFEEoLOGY!</h3>
+            <p>Celebramos 3 años de ofrecerte los mejores cafés y experiencias únicas. ¡Gracias por acompañarnos en este viaje!</p>
+            <p class="destacado-banner-cta">¡Únete a nuestra celebración!</p>
+        </div>
+    </section>
     <section id="bienvenida">
         <h2>Bienvenidos</h2>
         <p>COFFEEoLOGY.bo es una cafeteria tematica donde podras disfrutar cafe
@@ -38,8 +87,11 @@
         </ul>
     </section>
 </main>
-<footer>
-    <p>&copy; 2026 COFFEEoLOGY. Todos los derechos reservados.</p>
+<footer id="pie">
+    <div id="barra_top">
+        <p>¡Somos una cafetería inspirada en la ciencia y amamos el café de especialidad!</p>
+        <p>AV. 6 de agosto, entre Pedro Salazar y Belisario Salinas #2460 Sopocachi, La Paz, Bolivia</p>
+    </div>
 </footer>
 <script src="js/script.js"></script>
 </body>

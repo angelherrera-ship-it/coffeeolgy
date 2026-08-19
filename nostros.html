@@ -9,16 +9,30 @@
 <body>
 
    <header>
-    <img src="imagenes/empre.png" alt="Logo COFFEEoLOGY" style="height: 60px; vertical-align: middle; margin-right: 10px;">
-    <h1>COFFEEoLOGY</h1>
-    <p>Speciality Coffee Lab</p>
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="menu.html">Menu</a>
-    <a href="nostros.html">Nosotros</a>
-    <a href="contacto.html">Contacto</a>
-</nav>
-<button type="button" id="btn-tema" class="boton-modo">Cambio de modo</button>
+    <div class="header-top">
+        <div class="header-marca">
+            <img src="imagenes/presa.png" alt="Logo COFFEEoLOGY" class="header-logo">
+            <div class="header-titulo">
+                <h1>COFFEEoLOGY.bo</h1>
+                <p>Speciality Coffee Lab</p>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button type="button">Buscar</button>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://wa.me/59177279442" target="_blank" rel="noopener"><img src="imagenes/wapama.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/share/1RcT6Rmk3q/" target="_blank" rel="noopener"><img src="imagenes/book.jfif" alt="Facebook"></a>
+            <a href="https://www.instagram.com/coffeeology.bo?igsh=MWZjbnAxMXBtNzM5Mw==" target="_blank" rel="noopener"><img src="imagenes/gram.jpg" alt="Instagram"></a>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menu</a>
+        <a href="nostros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
 </header>
 <main>
     <section id="nosotros">
@@ -29,9 +43,38 @@
             Nuestra misión es acercar el café de especialidad a todos, en un espacio
             cálido pensado para compartir, aprender y disfrutar cada sorbo.</p>
     </section>
+    <section id="conoce-cafe">
+        <div class="cafe-video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/9Reemcxh0nY" title="Historia del Café: El origen de una bebida universal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h2>Conozcamos un poco más de este hermoso mundo</h2>
+        <p>La historia de cómo se expande por todo el mundo el cultivo y el consumo de café es una de las más atractivas y románticas que pueda haber. Esa historia comienza en el Cuerno de África, en Etiopía, donde el cafeto tuvo su origen probablemente en la provincia de Kaffa. Hay varios relatos, imaginativos pero poco probables, acerca de cómo se descubrieron los atributos del grano tostado de café.</p>
+        <a href="https://es.wikipedia.org/wiki/Café" target="_blank" rel="noopener" class="btn-saber-mas">Saber más</a>
+
+        <h2>¡Un buen café!</h2>
+        <div class="cafe-trivia-grid">
+            <div class="cafe-trivia-card">
+                <p>El café es la segunda bebida que más se consume en nuestro planeta.</p>
+                <p>Se calcula que al día se ingiere entre 1.600 y 2.000 millones de tazas al día en el mundo.</p>
+                <p>Donde más café se bebe es en los países nórdicos.</p>
+                <p>Estados Unidos es el país que consume más café en el mundo.</p>
+            </div>
+            <div class="cafe-trivia-card">
+                <p>Preparar un buen café es un arte que combina la elección de los mejores granos, la técnica adecuada y la atención al detalle. Primero, elige granos de café de alta calidad, preferiblemente recién tostados. Muele los granos justo antes de prepararlo para garantizar frescura, ajustando la molienda según el método de preparación: más fina para espresso y más gruesa para prensa francesa. Usa agua filtrada y caliéntala entre 90 y 96 grados Celsius para evitar quemar el café o subextraerlo. ¡Disfruta tu taza!</p>
+            </div>
+            <div class="cafe-trivia-card cafe-trivia-video">
+                <div class="cafe-video-wrap">
+                    <iframe src="https://www.youtube-nocookie.com/embed/4tYr_3qZiHk" title="Tutorial técnicas de Barista para preparar un buen café" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-<footer>
-    <p>&copy; 2026 COFFEEoLOGY. Todos los derechos reservados.</p>
+<footer id="pie">
+    <div id="barra_top">
+        <p>¡Somos una cafetería inspirada en la ciencia y amamos el café de especialidad!</p>
+        <p>AV. 6 de agosto, entre Pedro Salazar y Belisario Salinas #2460 Sopocachi, La Paz, Bolivia</p>
+    </div>
 </footer>
 <script src="js/script.js"></script>
 </body>
