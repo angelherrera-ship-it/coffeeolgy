@@ -5,8 +5,10 @@ if (formContacto) {
     formContacto.addEventListener("submit", function (event) {
         const nombre = document.querySelector("#nombre").value;
         const correo = document.querySelector("#correo").value;
+        const telefono = document.querySelector("#telefono").value;
+        const mensaje = document.querySelector("#mensaje").value;
 
-        if (nombre === "") {
+        if (nombre.trim() === "") {
             event.preventDefault();
             estado.textContent = "Por favor escribe tu nombre.";
             estado.classList.remove("oculto", "exito");
@@ -21,20 +23,42 @@ if (formContacto) {
             estado.classList.add("error");
             return;
         }
+
+        if (telefono.trim() === "") {
+            event.preventDefault();
+            estado.textContent = "Por favor escribe tu teléfono.";
+            estado.classList.remove("oculto", "exito");
+            estado.classList.add("error");
+            return;
+        }
+
+        if (mensaje.trim() === "") {
+            event.preventDefault();
+            estado.textContent = "Por favor escribe un mensaje.";
+            estado.classList.remove("oculto", "exito");
+            estado.classList.add("error");
+            return;
+        }
     });
 
     const inputNombre = document.querySelector("#nombre");
     const inputCorreo = document.querySelector("#correo");
+    const inputTelefono = document.querySelector("#telefono");
+    const inputMensaje = document.querySelector("#mensaje");
     const btnEnviar = document.querySelector("#btn-enviar");
 
     function revisarCampos() {
         const nombreOk = inputNombre.value.trim() !== "";
         const correoOk = inputCorreo.value.includes("@");
-        btnEnviar.disabled = !(nombreOk && correoOk);
+        const telefonoOk = inputTelefono.value.trim() !== "";
+        const mensajeOk = inputMensaje.value.trim() !== "";
+        btnEnviar.disabled = !(nombreOk && correoOk && telefonoOk && mensajeOk);
     }
 
     inputNombre.addEventListener("input", revisarCampos);
     inputCorreo.addEventListener("input", revisarCampos);
+    inputTelefono.addEventListener("input", revisarCampos);
+    inputMensaje.addEventListener("input", revisarCampos);
 }
 
 const slides = document.querySelectorAll(".slider .slide");
